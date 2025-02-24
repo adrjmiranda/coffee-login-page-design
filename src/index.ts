@@ -24,3 +24,19 @@ if (passwordInput && passwordVisibilityButtons.length) {
 		})
 	);
 }
+
+/**
+ * Scroll Reveal Animation
+ */
+import ScrollReveal from 'scrollreveal';
+
+ScrollReveal().reveal('#form', {
+	reset: false,
+	mobile: true,
+	opacity: 0,
+	distance: '15%',
+	origin: 'bottom',
+	duration: 1250,
+	delay: 150,
+	easing: 'ease-in-out',
+});
