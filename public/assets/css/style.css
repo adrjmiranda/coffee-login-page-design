@@ -1,0 +1,73 @@
+/***************** Imports *******************/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/***************** Variables *******************/
+:root {
+	/* Colors */
+	--black-color-00: #000000;
+
+	--primary-color: #23140a;
+	--secondary-color: #b67a38;
+	--tertiary-color: crimson;
+
+	--white-color-00: #ffffff;
+
+	/* Font Family */
+	--title-ff: 'Passion One', sans-serif;
+	--text-ff: 'Poppins', sans-serif;
+
+	/* Font Size */
+	--base-fs: 0.95rem;
+	--lg-fs: 1.35rem;
+	--xl-fs: 2.75rem;
+
+	/* Width */
+	--container-mw: 1280px;
+	--container-pi: 0.85rem;
+}
+
+/***************** General *******************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--text-ff);
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+button,
+input {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+button,
+input,
+input::placeholder {
+	font-size: var(--base-fs);
+}
+
+button {
+	cursor: pointer;
+}
+
+/***************** Reusable *******************/
+.container {
+	max-width: var(--container-mw);
+	padding-inline: var(--container-pi);
+	margin: 0 auto;
+}
