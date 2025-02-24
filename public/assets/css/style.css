@@ -31,6 +31,8 @@
 
 	/* Width */
 	--container-mw: 1280px;
+
+	/* Padding */
 	--container-pi: 0.85rem;
 
 	/* Border Radius */
@@ -148,6 +150,7 @@ button {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow-x: hidden;
 }
 
 /***************** FORM *******************/
@@ -167,6 +170,7 @@ button {
 	flex-direction: column;
 	text-align: center;
 	position: relative;
+	margin-block: 5.5rem 2.5rem;
 }
 
 .form-icon {
@@ -254,3 +258,19 @@ button {
 }
 /************** End of FORM ***************/
 /************** End of CONTENT ***************/
+
+/***************** Responsiveness *******************/
+@media screen and (max-width: 390px) {
+	/***************** Variables *******************/
+	:root {
+		/* Padding */
+		--container-pi: 0.35rem;
+	}
+
+	/***************** FORM *******************/
+	#form {
+		max-width: 100%;
+	}
+	/************** End of FORM ***************/
+}
+/************** End of Responsiveness ***************/
